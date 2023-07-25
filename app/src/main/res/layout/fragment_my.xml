@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Fragment_My">
+
+    <!-- 로그인 섹션 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity=""
+        android:layout_gravity="center"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="마이페이지"
+            android:textSize="30sp"
+            android:padding="12dp" />
+
+        <TextView
+            android:id="@+id/mypage_hello"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="12dp"
+            android:text="안녕하세요 패셔니스타"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/mypage_infomation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="12dp"
+            android:text="my info"
+            android:textSize="12sp" />
+
+
+        <TextView
+            android:id="@+id/mypage_change"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="change info"
+            android:textSize="12sp"
+            android:padding="12dp" />
+
+        <TextView
+            android:id="@+id/mypage_logout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="log out"
+            android:textSize="12sp"
+            android:padding="12dp" />
+
+
+    </LinearLayout>
+</FrameLayout>

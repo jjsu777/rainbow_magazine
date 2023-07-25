@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:background="#0073B1">
+
+        <ImageView
+            android:id="@+id/backButton"
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:scaleType="center"
+            android:src="@drawable/baseline_arrow_white_24"/>
+
+        <TextView
+            android:id="@+id/img_rv_news_detail_title"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="Rainbow Magazine"
+            android:gravity="center"
+            android:textColor="#ffffff"/>
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:scaleType="center"
+            android:src="@drawable/baseline_bookmark_white_24"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:scaleType="center"
+            android:src="@drawable/baseline_more_horiz_24"/>
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/img_rv_news_detail_photo"
+                android:layout_width="match_parent"
+                android:layout_height="507dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/supreme_news" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingHorizontal="16dp"
+                android:paddingVertical="20dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/img_rv_news_detail_content"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="2023 5월 슈프림의 12주차 신제품 릴리즈 소식"
+                    android:textSize="28dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/img_rv_news_detail_date"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="발행한 날 : 2023년 5월 13일"
+                    android:textSize="12dp" />
+
+                <TextView
+                    android:id="@+id/img_rv_news_detail_subcontent"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="슈프림의 12주차 아이템들이 릴리즈 된다는 소식, 자켓류, 셔츠, 반팔, 반바지 등 다양한 아이템 발매될 예정입니다."/>
+
+
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>
+

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/home"
+        android:icon="@drawable/baseline_home_24"
+        android:title="홈"
+        android:enabled="true"
+        />
+
+    <item
+        android:id="@+id/news"
+        android:icon="@drawable/baseline_newspaper_24"
+        android:title="NEWS"
+        android:enabled="true"
+        />
+    <item
+        android:id="@+id/style"
+        android:icon="@drawable/baseline_style_24"
+        android:title="STYLE"
+        android:enabled="true"
+        />
+    <item
+        android:id="@+id/my"
+        android:icon="@drawable/baseline_person_24"
+        android:title="MY"
+        android:enabled="true"
+        />
+
+</menu>

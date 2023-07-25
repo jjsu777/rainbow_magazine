@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:background="#0073B1">
+
+        <ImageView
+            android:id="@+id/backButton"
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:scaleType="center"
+            android:src="@drawable/baseline_arrow_white_24"/>
+
+        <TextView
+            android:id="@+id/img_rv_news_detail_title"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="Rainbow Magazine"
+            android:gravity="center"
+            android:textColor="#ffffff"/>
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:scaleType="center"
+            android:src="@drawable/baseline_bookmark_white_24"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:scaleType="center"
+            android:src="@drawable/baseline_more_horiz_24"/>
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:paddingTop="16dp"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="뉴스 작성"
+            android:textSize="24sp"
+            android:padding="12dp" />
+
+        <ImageView
+            android:id="@+id/news_image_upload"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:scaleType="centerCrop"
+            android:src="@mipmap/ic_launcher"
+            android:contentDescription="" />
+
+        <EditText
+            android:id="@+id/news_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="뉴스 제목"
+            android:inputType="textMultiLine"
+            android:gravity="top|start"
+            android:minLines="1"
+            android:maxLines="5"
+            android:scrollbars="vertical" />
+
+        <DatePicker
+            android:id="@+id/news_datePicker"
+            android:layout_width="300dp"
+            android:layout_height="100dp"
+            android:calendarViewShown="false"
+            android:datePickerMode="spinner" />
+
+        <EditText
+            android:id="@+id/news_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="뉴스 내용"
+            android:inputType="textMultiLine"
+            android:gravity="top|start"
+            android:minLines="5"
+            android:maxLines="10"
+            android:scrollbars="vertical" />
+        <Button
+            android:id="@+id/news_image_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="이미지 추가"
+            android:layout_marginTop="12dp"
+            android:layout_marginBottom="12dp"/>
+
+        <Button
+            android:id="@+id/news_write_complete"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:backgroundTint="#0073B1"
+            android:text="뉴스 작성 완료" />
+
+    </LinearLayout>
+    </ScrollView>
+</LinearLayout>
